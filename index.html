@@ -1,0 +1,153 @@
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="woodacre.css" media="screen" />
+    <title>
+      Woodacre
+    </title>
+  </head>
+
+  <!-- NAV BAR -->
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1 id="logo">W</h1>
+        <ul id="nav-list">
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- WELCOME SECTION -->
+
+    <main>
+      <form id="welcome_form" onsubmit="presentName(); return false;">
+        <input type="text" id="name" placeholder="What is your name?" />
+        <input type="submit" id="name_input" value="welcome." class="btn" />
+      </form>
+      <section id="welcome-section">
+        <!-- name submit section -->
+        <h1 id="page_title">woodacre.</h1>
+        <h2 id="support_title">web dev.</h2>
+
+        <script>
+          function presentName() {
+            let name = document.querySelector("#name").value;
+            if (name === "") {
+              name = "world!"
+            }
+            document.querySelector("#page_title").innerHTML = "hi, " + name.toLowerCase() + ".";
+            
+ document.querySelector("#support_title").innerHTML = "welcome to my page."
+            document.querySelector("#support_title").innerHTML = "this is literally just me showing you i can write javascript."
+          }
+        </script>
+      </section>
+
+      <div id="main-content">
+        <!-- ABOUT SECTION -->
+
+        <section id="about">
+          <div id="desc">
+            <h2>about me.</h2>
+            <p> recent mchem graduate from the university of manchester and self-taught web developer. </p>
+          </div>
+          <div id="skills">
+            <h2>skills.</h2>
+            <p>javascript <br>
+              html <br>
+              css
+            </p>
+           </div>
+           <div id="familiar">
+             <h2>technologies.</h2>
+             <p>jquery <br>
+             bootstrap <br>
+             scss</p>
+           </div>
+        </section>
+
+        <div id="project-container">
+
+          <!-- PROJECTS SECTION -->
+
+          <section id="projects">
+            <h2 id="project-header-section">projects.</h2>
+
+            <div id="projects-grid">
+              <a href="https://codepen.io/ollie-bark/full/yLJaeQG" target="_blank" class="project-tile">
+                <img class="project-img" src="https://codepen.io/ollieclark/pen/yLJaeQG/image/small.png" alt="Random Quote Generator" />
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  quote generator
+                  <span class="code">&#47;&gt;</span>
+                </p>
+              </a>
+
+              <a href="https://codepen.io/ollieclark/full/BazMaOy" target="_blank" class="project-tile">
+                <img class="project-img" src="https://codepen.io/ollieclark/pen/BazMaOy/image/large.png" alt="Javascript Calculator" />
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  clock
+                  <span class="code">&#47;&gt;</span>
+                </p>
+              </a>
+
+              <a href="https://codepen.io/ollieclark/full/ZEOZqXM" target="_blank" class="project-tile">
+                <img class="project-img" src="https://codepen.io/ollieclark/pen/ZEOZqXM/image/large.png" alt="Javascript Calculator" />
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  calculator
+                  <span class="code">&#47;&gt;</span>
+                </p>
+              </a>
+
+              <a href="https://codepen.io/ollieclark/pen/jOWOGKg" target="_blank" class="project-tile">
+                <img class="project-img" src="https://codepen.io/ollieclark/pen/jOWOGKg/image/large.png" alt="Koka noodle survey form" />
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  survey form
+                  <span class="code">&#47;&gt;</span>
+                </p>
+              </a>
+            </div>
+
+            <button id="show-all">
+              <a href="https://codepen.io/ollie-bark" class="btn show-all" target="_blank">
+                show all
+              </a>
+            </button>
+          </section>
+        </div>
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact">
+          <div id="contact-header">
+            <h2>want to get in touch?</h2>
+            <p>contact me here!</p>
+          </div>
+
+          <div id="contact-links">
+            <a href="https://www.facebook.com/profile.php?id=100001988978772" target="_blank" class="btn-contact" id="profile-link">
+              Facebook
+            </a>
+            <a href="https://github.com/ollieclark" target="_blank" class="btn-contact">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/oliverclark33/" target="_blank" class="btn-contact">
+              LinkedIn
+            </a>
+
+          </div>
+        </section>
+      </div>
+      <!-- FOOTER SECTION -->
+
+      <footer>
+        <h1>W</h1>
+      </footer>
+    </main>
+  </body>
