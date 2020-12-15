@@ -2,13 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Woodacre</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" src="favicon.ico">
+  <title>CodePen - Personal Portfolio </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woodacre</title><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
-  <!-- NAV BAR -->
+<!-- NAV BAR -->
 
   <body>
     <header>
@@ -25,27 +26,9 @@
     <!-- WELCOME SECTION -->
 
     <main>
-      <form id="welcome_form" onsubmit="presentName(); return false;">
-        <input type="text" id="name" placeholder="What is your name?" />
-        <input type="submit" id="name_input" value="welcome." class="btn" />
-      </form>
       <section id="welcome-section">
-        <!-- name submit section -->
-        <h1 id="page_title">woodacre.</h1>
+        <h1 id="page_title">ollie clark.</h1>
         <h2 id="support_title">web dev.</h2>
-
-        <script>
-          function presentName() {
-            let name = document.querySelector("#name").value;
-            if (name === "") {
-              name = "world!"
-            }
-            document.querySelector("#page_title").innerHTML = "hi, " + name.toLowerCase() + ".";
-            
- document.querySelector("#support_title").innerHTML = "welcome to my page."
-            document.querySelector("#support_title").innerHTML = "this is literally just me showing you i can write javascript."
-          }
-        </script>
       </section>
 
       <div id="main-content">
@@ -53,22 +36,29 @@
 
         <section id="about">
           <div id="desc">
-            <h2>about me.</h2>
-            <p> recent mchem graduate from the university of manchester and self-taught web developer. </p>
+            <h2>education.</h2>
+            <p> the university of manchester <br> mchem first class honours</p>
+          </div>
+          <div id="certifications">
+            <h2>certifications.</h2>
+            <p>responsive web design <br>
+              algorithms and data structures
+            </p>
           </div>
           <div id="skills">
-            <h2>skills.</h2>
+            <h2>languages.</h2>
             <p>javascript <br>
               html <br>
               css
             </p>
-           </div>
-           <div id="familiar">
-             <h2>technologies.</h2>
-             <p>jquery <br>
-             bootstrap <br>
-             scss</p>
-           </div>
+          </div>
+          <div id="hobbies">
+            <h2>hobbies.</h2>
+            <p>bouldering <br>
+              skateboarding <br>
+              athletics
+            </p>
+          </div>
         </section>
 
         <div id="project-container">
@@ -106,11 +96,11 @@
                 </p>
               </a>
 
-              <a href="https://codepen.io/ollieclark/pen/jOWOGKg" target="_blank" class="project-tile">
-                <img class="project-img" src="https://codepen.io/ollieclark/pen/jOWOGKg/image/large.png" alt="Koka noodle survey form" />
+              <a href="https://codepen.io/ollieclark/pen/YzGWRrG" target="_blank" class="project-tile">
+                <img class="project-img" src="https://codepen.io/ollieclark/pen/YzGWRrG/image/large.png" alt="Javascript Stopwatch Object" />
                 <p class="project-title">
                   <span class="code">&lt;</span>
-                  survey form
+                  stopwatch
                   <span class="code">&#47;&gt;</span>
                 </p>
               </a>
@@ -133,14 +123,15 @@
 
           <div id="contact-links">
             <a href="https://www.facebook.com/profile.php?id=100001988978772" target="_blank" class="btn-contact" id="profile-link">
-              facebook
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://github.com/ollieclark" target="_blank" class="btn-contact">
-              github
+              <i class="fab fa-github-square"></i>
             </a>
             <a href="https://www.linkedin.com/in/oliverclark33/" target="_blank" class="btn-contact">
-              linkedin
+              <i class="fab fa-linkedin"></i>
             </a>
+            <a href="mailto:oliverscott678@gmail.com"><i class="fas fa-at"></i></a>
 
           </div>
         </section>
@@ -153,6 +144,6 @@
     </main>
   </body>
 <!-- partial -->
-  
+  <script src='https://kit.fontawesome.com/365c57c561.js'></script>
 </body>
 </html>
